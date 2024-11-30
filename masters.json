@@ -1,0 +1,41 @@
+[
+  {
+    "fullName": "Іван Іванов",
+    "address": "м. Київ, вул. Лесі Українки, 15",
+    "phoneNumber": "+380509876543",
+    "departmentNumber": 2,
+    "experience": 8,
+    "brigadeNumber": 101,
+    "masterStatus": "Active",
+    "earnings": [
+      { "amount": 4500.0, "date": "2024-01-15" },
+      { "amount": 4700.0, "date": "2024-02-15" }
+    ]
+  },
+  {
+    "fullName": "Петро Петров",
+    "address": "м. Київ, вул. Лесі Українки, 15",
+    "phoneNumber": "+380509876543",
+    "departmentNumber": 2,
+    "experience": 8,
+    "brigadeNumber": 102,
+    "masterStatus": "Active",
+    "earnings": [
+      { "amount": 4500.0, "date": "2024-01-15" },
+      { "amount": 4700.0, "date": "2024-02-15" }
+    ]
+  },
+  {
+    "fullName": "Віталік Віткін",
+    "address": "м. Київ, вул. Лесі Українки, 15",
+    "phoneNumber": "+380509876543",
+    "departmentNumber": 2,
+    "experience": 8,
+    "brigadeNumber": 103,
+    "masterStatus": "Active",
+    "earnings": [
+      { "amount": 4500.0, "date": "2024-01-15" },
+      { "amount": 4700.0, "date": "2024-02-15" }
+    ]
+  }
+]

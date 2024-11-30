@@ -1,0 +1,16 @@
+[ {
+  "typeAccident" : "Забруднена вода",
+  "dateAccident" : [ 2024, 11, 12 ],
+  "decisionCost" : 800.0,
+  "idAccident" : "fc4353c1-5a9b-44c3-be94-45bc9a7a9dd4"
+}, {
+  "typeAccident" : "Малий струм",
+  "dateAccident" : [ 2024, 11, 17 ],
+  "decisionCost" : 1250.0,
+  "idAccident" : "1401d189-6cfa-4e68-bf88-4afa0f1334f8"
+}, {
+  "typeAccident" : "Прорив",
+  "dateAccident" : [ 2024, 11, 19 ],
+  "decisionCost" : 2300.0,
+  "idAccident" : "7777cc51-db5f-4994-8ae0-91144c7df1a4"
+} ]

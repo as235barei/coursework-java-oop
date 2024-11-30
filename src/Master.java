@@ -1,43 +1,52 @@
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.List;
+import java.util.Map;
+
 public class Master extends Person {
     private int experience; // Стаж
     private int brigadeNumber; // Номер бригади
-    private double earnings; // Заробіток
     private String masterStatus; // Стан аварії
+    private List<Accident> accidents; // Список аварій, пов'язаних із майстром
+    private List<Map<String, Object>> earnings;  // Список об'єктів, що містять суму та дату заробітку
 
-
-    public Master(String fullName, String address, String phoneNumber, int departmentNumber, int experience, int brigadeNumber, double earnings,  String masterStatus) {
+    @JsonCreator
+    public Master(@JsonProperty("fullName") String fullName,
+                  @JsonProperty("address") String address,
+                  @JsonProperty("phoneNumber") String phoneNumber,
+                  @JsonProperty("departmentNumber") int departmentNumber,
+                  @JsonProperty("experience") int experience,
+                  @JsonProperty("brigadeNumber") int brigadeNumber,
+                  @JsonProperty("masterStatus") String masterStatus,
+                  @JsonProperty("earnings") List<Map<String, Object>> earnings) {
         super(fullName, address, phoneNumber, departmentNumber);
         this.experience = experience;
         this.brigadeNumber = brigadeNumber;
-        this.earnings = earnings;
         this.masterStatus = masterStatus;
+        this.earnings = earnings;
     }
 
-    public int getExperience() {
-        return experience;
-    }
-    public void setExperience(int experience) {
-        this.experience = experience;
+    public List<Map<String, Object>> getEarnings() {
+        return earnings;
     }
 
     public int getBrigadeNumber() {
         return brigadeNumber;
     }
-    public void setBrigadeNumber(int brigadeNumber) {
-        this.brigadeNumber = brigadeNumber;
-    }
 
-    public double getEarnings() {
-        return earnings;
-    }
-    public void setEarnings(double earnings) {
-        this.earnings = earnings;
-    }
-    public String getMasterStatus() {
-        return masterStatus;
-    }
-    public void setMasterStatus(String masterStatus) {
-        this.masterStatus = masterStatus;
-    }
 
+    @Override
+    public String toString() {
+        return "Master{" +
+                "fullName='" + getFullName() + '\'' +
+                ", address='" + getAddress() + '\'' +
+                ", phoneNumber='" + getPhoneNumber() + '\'' +
+                ", departmentNumber=" + getDepartmentNumber() +
+                ", experience=" + experience +
+                ", brigadeNumber=" + brigadeNumber +
+                ", earnings=" + earnings +
+                ", masterStatus='" + masterStatus + '\'' +
+                '}';
+    }
 }

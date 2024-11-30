@@ -1,0 +1,19 @@
+[ {
+  "fullName" : "Олександр Шевченко",
+  "address" : "м. Київ, вул. Хрещатик, 22",
+  "phoneNumber" : "+380503333333",
+  "departmentNumber" : 0,
+  "accidentIds" : [ "fc4353c1-5a9b-44c3-be94-45bc9a7a9dd4" ]
+}, {
+  "fullName" : "Марія Петренко",
+  "address" : "м. Київ, вул. Грушевського, 12",
+  "phoneNumber" : "+380504444444",
+  "departmentNumber" : 0,
+  "accidentIds" : [ "A002", "1401d189-6cfa-4e68-bf88-4afa0f1334f8" ]
+}, {
+  "fullName" : "Вітя",
+  "address" : "стапинка",
+  "phoneNumber" : "090909",
+  "departmentNumber" : 12,
+  "accidentIds" : [ "7777cc51-db5f-4994-8ae0-91144c7df1a4" ]
+} ]

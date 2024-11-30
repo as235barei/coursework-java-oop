@@ -1,25 +1,16 @@
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class Brigade {
     private int numberBrigade;
     private List<Master> masters;
 
-    public Brigade(int numberBrigade, List<Master> masters) {
+    @JsonCreator
+    public Brigade(@JsonProperty("numberBrigade") int numberBrigade,
+                   @JsonProperty("masters") List<Master> masters) {
         this.numberBrigade = numberBrigade;
-        this.masters = masters;
-    }
-
-    public int getNumberBrigade() {
-        return numberBrigade;
-    }
-    public void setNumberBrigade(int numberBrigade) {
-        this.numberBrigade = numberBrigade;
-    }
-
-    public List<Master> getMasters() {
-        return masters;
-    }
-    public void setMasters(List<Master> masters) {
         this.masters = masters;
     }
 
